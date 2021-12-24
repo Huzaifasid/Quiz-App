@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="shortcut icon" type="image/png" href="fav.png" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="setQues()">
+    <h1>QUIZ APPLICATION</h1>
+
+    <section class="mainBox">
+
+
+        <div class="quizBox">
+            <!-- //header// -->
+            <section class="header">
+                <div>
+                    <p id="uName">
+
+                    </p>
+                </div>
+                <div>
+                    <span id="min">1</span>
+                    <span>:</span>
+                    <span id="sec">00</span>
+                </div>
+            </section>
+
+            <!-- ////BODY/// -->
+            <section class="body">
+                <div class="quesBox">
+                    <h3 id="quizQues"></h3>
+                </div>
+                <div class="optionBox">
+                    <li class="quizOptionLi"></li>
+                    <li class="quizOptionLi"></li>
+                    <li class="quizOptionLi"></li>
+                    <li class="quizOptionLi"></li>
+                </div>
+
+            </section>
+
+            <!-- ////FOOTER// -->
+            <section class="footer">
+                <div id="footerCOunter">
+                    1 / 7
+                </div>
+                <div>
+                    <button id="nextBtn" onclick="nextQues()">NEXT QUES</button>
+
+                </div>
+
+            </section>
+
+        </div>
+    </section>
+
+    <div id="resultBox">
+
+        <table>
+            <tr>
+                <td>NAME:</td>
+                <td id="userName"></td>
+            </tr>
+            <tr>
+                <td>TOTAL:</td>
+                <td id="totalQues"></td>
+            </tr>
+            <tr>
+                <td>CORRECT:</td>
+                <td id="totalCOrrectAns"></td>
+            </tr>
+            <tr>
+                <td>WRONG:</td>
+                <td id="totalWrongAns"></td>
+            </tr>
+        </table>
+
+    </div>
+
+
+
+
+
+
+</body>
+<script src="app.js"></script>
+
+
+</html>
